@@ -37,9 +37,9 @@ class _LoadingDotsAnimationState extends State<LoadingDotsAnimation>
           children: [
             _buildDot(0.0),
             const SizedBox(width: 10),
-            _buildDot(0.33),
+            _buildDot(0.1),
             const SizedBox(width: 10),
-            _buildDot(0.66),
+            _buildDot(0.2),
           ],
         );
       },
@@ -84,6 +84,7 @@ class LoadingDotsDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: const Text('Loading Animation')),
       body: const Center(
         child: LoadingDotsAnimation(),
